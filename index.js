@@ -8,19 +8,17 @@ let operation = prompt('Enter the operation (+, -, *, /): ');
 
 let result = 0;
 
-if (operation === '+') {
+if (['+', '-', '*', '/'].includes(operation)) {
+  if (operation === '+') {
     result = parseFloat(firstNum) + parseFloat(secondNum);
-} 
-else if (operation === '-') {
+  } else if (operation === '-') {
     result = parseFloat(firstNum) - parseFloat(secondNum);
-} 
-else if (operation === '*') {
+  } else if (operation === '*') {
     result = parseFloat(firstNum) * parseFloat(secondNum);
-}
-else if (operation === '/') {
+  } else if (operation === '/') {
     result = parseFloat(firstNum) / parseFloat(secondNum);
+  }
+  console.log(`Result: ${result}`);
 } else {
-
-    
-
+  console.log('You entered a wrong operator!');
 }
