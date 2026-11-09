@@ -19,4 +19,8 @@ else if (operation === '*') {
 }
 else if (operation === '/') {
     result = parseFloat(firstNum) / parseFloat(secondNum);
+} else {
+
+    
+
 }
